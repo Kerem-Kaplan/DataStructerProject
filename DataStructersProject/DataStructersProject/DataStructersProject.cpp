@@ -38,135 +38,121 @@ int elemansayisi;
 
 int main()
 {
-
-
-	//----------------------------------------------------
 	/*LinkedList* linkedList = new LinkedList();
 	linkedList->olustur();
-	int size = 600;
-	//BU BÖLÜM TAMAMLANDI:EKLEME BÖLÜMÜ
+	int size = 10000;
 	elemansayisi = size;
 	for (int i = 0; i < size; i++) {
 		linkedList->ekle(i, i);
-
 	}
-	linkedList->yazdir();*/
-	//cout << endl << endl << endl;
-	//auto begin1 = std::chrono::high_resolution_clock::now();
-	//linkedList->sil(34);
-	//auto end1 = std::chrono::high_resolution_clock::now();
-	//cout << endl;
-	//cout << endl;
-	//cout << "3 bin elemanlı bir listede" << endl;
-	//cout << endl;
-	//auto elapsed1 = std::chrono::duration_cast<std::chrono::microseconds>(end1 - begin1);
-	//cout << "Liste ile gerçeklemede ekleme süresi => " << elapsed1.count() << " mikro-saniye" << endl;
-	//linkedList->bosalt();
-	//cout << endl << endl << endl;
-	//linkedList->yazdir();
-	//----------------------------------------------------
-	/*LinkedList* linkedList = new LinkedList();
-	linkedList->olustur();
-	int size = 1000;
-	elemansayisi = size;
-	for (int i = 0; i < size; i++) {			//BU BÖLÜM TAMAMLANDI:GÜNCELLEME
-		linkedList->ekle(i, i);
-
-	}
-	linkedList->yazdir();
-	linkedList->guncelle(98, 357);
 	cout << endl << endl << endl;
-	linkedList->yazdir();*/
-	//------------------------------------------------------------------------------
-	/*LinkedList* linkedList = new LinkedList();
-	linkedList->olustur();
-	int size = 100;
-	elemansayisi = size;
-	for (int i = 0; i < size; i++) {			//BU BÖLÜM TAMAMLANDI:
-		linkedList->ekle(i, i);
-	}
-	linkedList->yazdir();
-	linkedList->bosalt();
-	cout << endl << endl << endl;
-	linkedList->yazdir();*/
-	//------------------------------------------------------------------------------
+	auto begin1 = std::chrono::high_resolution_clock::now();			//LİNKEDLİST EKLEME BÖLÜMÜ
+	linkedList->guncelle(142, 0);
+	auto end1 = std::chrono::high_resolution_clock::now();
+	cout << endl;
+	cout << endl;
+	cout << "10 bin elemanlı bir listede" << endl;
+	cout << endl;
+	auto elapsed1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end1 - begin1);
+	cout << "Liste ile gerçeklemede ekleme süresi => " << elapsed1.count() << " nano-saniye" << endl;*/
 
+	//-----------------------------------------------------------------------------------------
 
-	/*int size = 5;
-
-	ArrayList* arrayList = new ArrayList();
-	arrayList->sayac = 0;
+	/*ArrayList* arrayList = new ArrayList();
 	arrayList->olustur();
-	arrayList->sayac = size;
-	elemansayisi = arrayList->sayac;
-	arrayList->ekle(8, 0);*/
-	//------------------------------------------
-	/*arrayList->ekle();*/
-	/*for (int i = 0; i < size; i++)
-	{
-
-		arrayList->ekle(i, i);
-
-	}*/
-
-	/*arrayList->sayac = 0;
-	a = arrayList->sayac;
-	arrayList->ekle(4, 2);*/
-
-	/*sonaEkle();
-	return 0;*/
-
-	//--------------------------------------------------------------------------------
-
-	ArrayList* arrayList = new ArrayList();
-	arrayList->olustur();
-	int size = 10;
+	int size = 10000;
 	elemansayisi = size;
-	for (int i = 0; i < size; i++)
-	{
+	for (int i = 0; i < size; i++) {
 		arrayList->ekle(i, i);
 	}
 	cout << endl << endl << endl;
-	for (int i = 0; i < elemansayisi; i++)				//ARRAYLİST NESNESİNİ OLUSTURMA VE DİZİYE ELEMANLARI EKLEME BOLUMU
-	{
-		cout << *(arrayList->bas + i) << "   " << (arrayList->bas + i) << endl;
+	auto begin1 = std::chrono::high_resolution_clock::now();			//ARRAYLİST EKLEME BÖLÜMÜ
+	arrayList->ekle(65, 10000);
+	auto end1 = std::chrono::high_resolution_clock::now();
+	cout << endl;
+	cout << endl;
+	cout << "10 bin elemanlı bir listede" << endl;
+	cout << endl;
+	auto elapsed1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end1 - begin1);
+	cout << "Dizi ile gerçeklemede ekleme süresi => " << elapsed1.count() << " nano-saniye" << endl;*/
+
+	//-----------------------------------------------------------------------------------------
+	/*LinkedList* linkedList = new LinkedList();
+	linkedList->olustur();
+	int size = 10000;
+	elemansayisi = size;
+	for (int i = 0; i < size; i++) {
+		linkedList->ekle(i, i);
 	}
-	arrayList->yazdir();
-	//--------------------------------------------------------------------------------
-
-	/*elemansayisi++;
-	arrayList->ekle(4, 0);
 	cout << endl << endl << endl;
-	for (int i = 0; i < elemansayisi; i++)				//BASA ELEMAN EKLEME:ARRAYLİST
-	{
-		cout << *(arrayList->bas + i) << "   " << (arrayList->bas + i) << endl;
+	auto begin1 = std::chrono::high_resolution_clock::now();			//LİNKEDLİST GÜNCELLEME BÖLÜMÜ
+	linkedList->guncelle(142, 10000);
+	auto end1 = std::chrono::high_resolution_clock::now();
+	cout << endl;
+	cout << endl;
+	cout << "10 bin elemanlı bir listede" << endl;
+	cout << endl;
+	auto elapsed1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end1 - begin1);
+	cout << "Liste ile gerçeklemede güncelleme süresi => " << elapsed1.count() << " nano-saniye" << endl;*/
+	//-----------------------------------------------------------------------------------------
 
-	}*/
-
-	//---------------------------------------------------------------------------------
-
-	/*elemansayisi++;
+	/*ArrayList* arrayList = new ArrayList();
+	arrayList->olustur();
+	int size = 10000;
+	elemansayisi = size;
+	for (int i = 0; i < size; i++) {
+		arrayList->ekle(i, i);
+	}
 	cout << endl << endl << endl;
-	arrayList->ekle(15, elemansayisi);					//SONA ELEMAN EKLEME BÖLÜMÜ:ARRAYLİST
+	auto begin1 = std::chrono::high_resolution_clock::now();			//ARRAYLİST GÜNCELLEME BÖLÜMÜ
+	arrayList->guncelle(654, 10000);
+	auto end1 = std::chrono::high_resolution_clock::now();
+	cout << endl;
+	cout << endl;
+	cout << "10 bin elemanlı bir listede" << endl;
+	cout << endl;
+	auto elapsed1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end1 - begin1);
+	cout << "Dizi ile gerçeklemede güncelleme süresi => " << elapsed1.count() << " nano-saniye" << endl;*/
+	//-----------------------------------------------------------------------------------------
 
-	for (int i = 0; i < elemansayisi; i++)
-	{
-		cout << *(arrayList->bas + i) << "   " << (arrayList->bas + i) << endl;
-
-	}*/
-
-	//------------------------------------------------------------------------
-	/*arrayList->guncelle(42, 10);
+	/*LinkedList* linkedList = new LinkedList();
+	linkedList->olustur();
+	int size = 10000;
+	elemansayisi = size;
+	for (int i = 0; i < size; i++) {
+		linkedList->ekle(i, i);
+	}
 	cout << endl << endl << endl;
-	for (int i = 0; i < elemansayisi; i++)
-	{
-		cout << *(arrayList->bas + i) << "   " << (arrayList->bas + i) << endl;
+	auto begin1 = std::chrono::high_resolution_clock::now();			//LİNKEDLİST SİLME BÖLÜMÜ
+	linkedList->sil(142);
+	auto end1 = std::chrono::high_resolution_clock::now();
+	cout << endl;
+	cout << endl;
+	cout << "10 bin elemanlı bir listede" << endl;
+	cout << endl;
+	auto elapsed1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end1 - begin1);
+	cout << "Liste ile gerçeklemede güncelleme süresi => " << elapsed1.count() << " nano-saniye" << endl;*/
+	//-----------------------------------------------------------------------------------------
 
-	}*/
-
-	arrayList->sil(1);
+	/*ArrayList* arrayList = new ArrayList();
+	arrayList->olustur();
+	int size = 10000;
+	elemansayisi = size;
+	for (int i = 0; i < size; i++) {
+		arrayList->ekle(i, i);
+	}
 	cout << endl << endl << endl;
-	arrayList->yazdir();
+	auto begin1 = std::chrono::high_resolution_clock::now();			//ARRAYLİST SİLME BÖLÜMÜ
+	arrayList->guncelle(65, 9333);
+	auto end1 = std::chrono::high_resolution_clock::now();
+	cout << endl;
+	cout << endl;
+	cout << "10 bin elemanlı bir listede" << endl;
+	cout << endl;
+	auto elapsed1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end1 - begin1);
+	cout << "Dizi ile gerçeklemede güncelleme süresi => " << elapsed1.count() << " nano-saniye" << endl; */
+	//-----------------------------------------------------------------------------------------
+
 }
 
 
@@ -175,8 +161,8 @@ int main()
 //ArrayList elements
 void ArrayList::olustur()
 {
-	//4. hafta 22.sayfa
-	bas = new int[10];
+	//dizi olusturma ve bas degerini atama
+	bas = new int[10000];
 }
 
 void ArrayList::ekle(int _deger, int sira)
@@ -208,64 +194,9 @@ void ArrayList::ekle(int _deger, int sira)
 
 	//sona eleman ekleme
 	if (sira == elemansayisi) {
+		bas[elemansayisi];
 		bas[sira] = _deger;
 	}
-	/*for (int i = 0; i < elemansayisi; i++)
-	{
-		cout << bas[i] << "	" << bas + sira << endl;
-	}*/
-
-
-	//ortaya eleman ekleme
-	/*if (sira != _deger && sira < elemansayisi) {
-		for (int i = elemansayisi; sira < elemansayisi; i--)
-		{
-			bas[i] = bas[i - 1];
-		}
-		bas[sira] = _deger;
-	}*/
-
-
-	/*cout << bas  << endl;*/
-
-
-
-	/*int dizi[10];
-	for (int i = 0; i < 10; i++)
-	{
-		dizi[i] = *(bas + i);
-		cout << dizi[i] << endl;
-	}*/
-
-
-	//int a = 0;
-	//
-	//
-	////diziye eleman ekledik
-
-	//	//*bas = *(bas + sira);
-	//*(bas + sira) = deger;
-	//cout << *(bas + sira) << "   " << (bas + sira) << endl << endl<<endl;
-	//a++;
-
-	//while (a == 0) {
-
-	//	if (sira == 0) {
-	//		*(bas + 1) = *bas;
-	//		*(bas + sira) = NULL;
-	//		*bas = deger;
-	//	}
-
-	//	if (sira != 0 && sira < elemansayisi) {
-	//		*(bas + sira++) = *(bas + sira);
-	//		*(bas + sira) = deger;
-	//	}
-	//	if (sira = elemansayisi) {
-
-	//	}
-	//	break;
-	//}
-	//cout << *(bas + sira) << "   " << (bas + sira) << endl;
 
 }
 
@@ -284,19 +215,22 @@ void ArrayList::guncelle(int _deger, int sira)
 
 void ArrayList::sil(int sira)
 {
-	for (int i = sira; sira < elemansayisi; i++)
+
+	for (int i = elemansayisi; sira < elemansayisi; i--)
 	{
 		bas[i] = bas[i - 1];
 	}
 	elemansayisi--;
 	bas[elemansayisi];
+
+	return;
 }
 
 void ArrayList::yazdir()
 {
 	for (int i = 0; i < elemansayisi; i++)
 	{
-		cout << *(bas + i) << "   " << (bas + i) << endl;
+		cout << *(bas + i) << "   ";
 	}
 }
 
@@ -366,7 +300,7 @@ void LinkedList::ekle(int _deger, int sira)
 			tara = tara->sonraki;
 		}
 		tara->sonraki = yeni;
-		/*elemansayisi++;*/
+
 		sira++;
 	}
 
@@ -431,6 +365,7 @@ void LinkedList::yazdir()
 	while (tara) {
 		cout << tara->deger << " ";
 		tara = tara->sonraki;
+
 	}
 	cout << endl;
 }
