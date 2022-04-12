@@ -1,0 +1,2 @@
+﻿  DataStructersProject.cpp
+C:\Users\kerem\OneDrive\Masaüstü\Data Structers Project\Ödev 1\Solution Explorer\DataStructersProject\DataStructersProject\DataStructersProject.cpp(358): error C4703: potentially uninitialized local pointer variable 'arka' used
